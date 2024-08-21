@@ -2,7 +2,7 @@
   "name": "concertgoer",
   "version": "1.0.0",
   "description": "concert api",
-  "main": "index.ts",
+  "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   "author": "jostein j hauge",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.19.2",
     "mongodb": "4.1"
   }
 }
