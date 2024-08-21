@@ -1,0 +1,22 @@
+{
+  "name": "concertgoer",
+  "version": "1.0.0",
+  "description": "concert api",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "concertgoer"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "jostein j hauge",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "4.1"
+  }
+}
