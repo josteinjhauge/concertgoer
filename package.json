@@ -17,7 +17,10 @@
   "author": "jostein j hauge",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.19.2",
-    "mongodb": "4.1"
+    "mongodb": "4.1",
+    "uuid": "^10.0.0",
+    "winston": "^3.14.2"
   }
 }

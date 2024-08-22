@@ -1,0 +1,25 @@
+{
+    "concerts": [
+        {
+            "id": 1,
+            "name": "Rock Fest",
+            "date": "2022-08-15",
+            "location": "New York",
+            "artists": ["Metallica", "Guns N' Roses", "Foo Fighters"]
+        },
+        {
+            "id": 2,
+            "name": "Pop Party",
+            "date": "2022-09-10",
+            "location": "Los Angeles",
+            "artists": ["Taylor Swift", "Justin Bieber", "Ariana Grande"]
+        },
+        {
+            "id": 3,
+            "name": "EDM Extravaganza",
+            "date": "2022-10-05",
+            "location": "Miami",
+            "artists": ["Calvin Harris", "Martin Garrix", "The Chainsmokers"]
+        }
+    ]
+}
