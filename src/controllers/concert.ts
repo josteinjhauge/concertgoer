@@ -1,8 +1,7 @@
-import { Concert } from "./model";
+import { Concert } from "../models/concert";
 import { Request, Response } from "express";
+import * as repo from '../repository/concert'
 
-export class ConcertController {
-    private readonly repo: ConcertRepository = new ConcertRepository();
 
     /**
      * Get all concerts
@@ -11,10 +10,10 @@ export class ConcertController {
      * @param {Response} res
      * @returns {Promise<Response>}
      */
-    async getAllConcerts(req: Request, res: Response): Promise<Response>{ 
+   
+    const getAllConcerts = async (req: Request, res: Response): Promise<Response> => { 
         try {
-            const concerts: Concert[] = await repo.getConcerts({}, true);
-
+            const concerts = repo.getAll();
             return res.status(200).json(concerts);
         } catch (err) {
             return res.status(500).json({
@@ -23,4 +22,5 @@ export class ConcertController {
             });
         }
     }
-}
+
+export default {getAllConcerts}
