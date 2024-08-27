@@ -1,4 +1,5 @@
 import { Concert } from "./model";
+import { Request, Response } from "express";
 
 export class ConcertController {
     private readonly repo: ConcertRepository = new ConcertRepository();
@@ -10,7 +11,7 @@ export class ConcertController {
      * @param {Response} res
      * @returns {Promise<Response>}
      */
-    async getConcerts(req: Request, res: Response): Promise<Response>{ 
+    async getAllConcerts(req: Request, res: Response): Promise<Response>{ 
         try {
             const concerts: Concert[] = await repo.getConcerts({}, true);
 
